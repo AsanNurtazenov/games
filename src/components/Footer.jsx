@@ -4,6 +4,7 @@ import {MdFormatColorText} from 'react-icons/md'
 import {CiDiscount1} from 'react-icons/ci'
 import {CiGlobe} from 'react-icons/ci'
 import {CiTrophy} from 'react-icons/ci'
+import { HiCurrencyDollar } from "react-icons/hi2";
 <link rel="stylesheet" href="" />
 
 
@@ -24,6 +25,10 @@ const Footer = () => {
                     </div>
                     <div class="column">
                         <CiTrophy/>
+                    </div>
+                    <div class="column">
+                    <HiCurrencyDollar />
+
                     </div>
                 </div>
             </div>
