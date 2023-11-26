@@ -1,0 +1,76 @@
+
+.containera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardsa{
+    display: grid;
+    grid-template: repeat(3, 1fr)/ repeat(4, 1fr);
+    gap: 10px
+}
+
+.carda{
+    height: 100px;
+    width: 100px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.carda.flipped .inner {
+    transform: rotateY(180deg);
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.6s cubic-bezier(0.38, 0.02, 0.09, 1.66) all;
+}
+
+.carda .front,
+.carda .back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.carda .front {
+    background: 100px;
+    background: white;
+    transform: rotateY(180deg);
+}
+
+.carda .back {
+    font-size: 100px;
+    transition: 0.3s ease all;
+}
+
+.carda .back:hover,
+.button-restart:hover {
+    background: gray;
+    transform: scale(1.02);
+}
+.button-restart {
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size:20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: orange;
+    transition: 0.3s ease all;
+}
+.number-of-strokesa{
+    font-size: 20px;
+    font-weight: bold;
+}

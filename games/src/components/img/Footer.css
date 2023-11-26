@@ -1,0 +1,55 @@
+.card{
+    background-color: lightgoldenrodyellow;
+}
+.card:hover{
+    transform: translateY(-10px);
+    background: #37B44C;
+    color:white;
+    transition: .5s
+}
+.tile:hover{
+    transform: translateY(-5px);
+}
+.form{
+    height: 700px;
+}
+.c{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+}
+
+.grid1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.row1{
+    display: flex;
+}
+.cell1 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    cursor: pointer;
+}
+.selected1 {
+    background-color: green;
+}
+.selected2 {
+    background-color: red;
+}
+.button1{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: blueviolet;
+    cursor: pointer;
+}
